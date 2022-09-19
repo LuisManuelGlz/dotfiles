@@ -1,0 +1,22 @@
+[core]
+    editor = nvim
+[push]
+    default = simple
+[alias]
+    d = diff
+    st = status
+    br = branch
+    ba = branch -a
+    bm = branch --merged
+    bn = branch --no-merged
+    co = checkout
+    ci = commit
+    ac = "!git add . && git commit"
+    pom = push origin master
+    lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    cob = checkout -b
+    pom = push origin main
+    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+    pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
+[init]
+    defaultBranch = main
