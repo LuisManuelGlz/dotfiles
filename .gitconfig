@@ -3,6 +3,7 @@
 [push]
     default = simple
 [alias]
+    a = add
     d = diff
     st = status
     br = branch
@@ -11,6 +12,7 @@
     bn = branch --no-merged
     co = checkout
     ci = commit
+    cl = clone
     ac = "!git add . && git commit"
     pom = push origin master
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
